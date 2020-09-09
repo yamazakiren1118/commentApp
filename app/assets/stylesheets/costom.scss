@@ -1,0 +1,52 @@
+html,body,p,div,a,hr{
+  margin:0;
+  padding:0;
+  line-height:1;
+}
+body{
+  background-color: #aaaaaa38;
+}
+.container{
+  width:900px;
+  margin:0 auto;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.tweet_container,.tweet_new_contaner,.comment_new_contaner{
+  width:500px;
+  margin:20px auto 0 auto;
+  border: solid 1px #aaa;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: #f6f4f4;
+  min-height: 300px;
+}
+.tweet_container .tweet{
+  font-size:40px;
+  margin: 15px 0 0 0;
+  border: solid #79b279;
+  border-width: 0 0 3px 0;
+}
+.tweet_container .comment,.pagination{
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}
+button{
+  margin: 10px 0 10px 0;
+  height:30px;
+}
+label{
+  display:flex;
+}
+textarea{
+  background-color: #fcfcfc;
+  margin:20px 0 0 0;
+  height:200px;
+  width:300px;
+}
+input[type="submit"]{
+  margin:10px 0;
+  height:30px;
+}

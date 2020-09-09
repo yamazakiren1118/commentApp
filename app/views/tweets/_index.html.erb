@@ -1,0 +1,5 @@
+<% comments.each do |comment| %>
+  <p class="comment"><%= comment.comment %></p>
+
+<% end %>
+<%= paginate comments,params:{tweet_id: tweet_id},remote:true%>

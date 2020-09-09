@@ -1,0 +1,17 @@
+<div class="container">
+<%= link_to(tweets_new_path) do %>
+  <button type="button" name="button">New Tweet</button>
+<% end %>
+<% @tweets.each do |tweet| %>
+<div class="tweet_container">
+
+  <div id="tweet_<%= tweet.id %>">
+    <p class="tweet"><%= tweet.tweet %></p>
+    <%= render partial: 'index',locals:{comments:tweet.comments.page(params[:page]).per(3),tweet_id:tweet.id}%>
+  </div>
+  <%= link_to(comments_new_path(:tweet_id => tweet.id)) do%>
+    <button type="button" name="button">New Comment</button>
+  <% end %>
+</div>
+<% end %>
+</div>

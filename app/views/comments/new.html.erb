@@ -1,0 +1,7 @@
+<div class="comment_new_contaner">
+  <%= form_with model:@comments,local:true,url:'/comments' do |form| %>
+    <label><%= form.text_area :comment %></label>
+    <label><%= form.hidden_field :tweet_id,:value => params[:tweet_id] %></label>
+    <label><%= form.submit %></label>
+  <% end %>
+</div>

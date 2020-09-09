@@ -1,0 +1,6 @@
+<div class="tweet_new_contaner">
+  <%= form_with model:@tweets,local:true do |form| %>
+    <label><%= form.text_area :tweet %></label>
+    <label><%= form.submit %></label>
+  <% end %>
+</div>
