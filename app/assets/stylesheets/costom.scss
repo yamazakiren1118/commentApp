@@ -28,11 +28,29 @@ body{
   margin: 15px 0 0 0;
   border: solid #79b279;
   border-width: 0 0 3px 0;
+  display:inline-block;
+  word-break: break-word;
 }
 .tweet_container .comment,.pagination{
   font-size: 20px;
   margin: 10px 0 0 0;
+  word-break: break-word;
 }
+.comment_container,.tweet_child_container,.pagination{
+  min-width: 300px;
+}
+// .comment_container{
+//   position: relative;
+//   height:160px;
+// }
+// .pagination{
+//   position: absolute;
+//   top:80px;
+// }
+// .comment_container button{
+//   position: absolute;
+//   top: 120px;
+// }
 button{
   margin: 10px 0 10px 0;
   height:30px;
