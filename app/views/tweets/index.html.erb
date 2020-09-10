@@ -1,6 +1,6 @@
 <div class="container">
 <%= link_to(tweets_new_path) do %>
-  <button type="button" name="button">New Tweet</button>
+  <button>New Tweet</button>
 <% end %>
 <!-- <a href="#">a</a> -->
 <% @tweets.each do |tweet| %>
@@ -16,7 +16,7 @@
 
 
   <%= link_to(comments_new_path(:tweet_id => tweet.id)) do%>
-    <button type="button" name="button">New Comment</button>
+    <button>New Comment</button>
   <% end %>
   </div>
 </div>
